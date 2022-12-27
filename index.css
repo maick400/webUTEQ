@@ -4,3 +4,88 @@
     margin: 0;
 }
 
+html{
+    font-size: 62.5%;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-areas:
+    "inicio servicios descargar qs";
+    grid-template-rows: 8vh;
+    list-style: none;
+
+}
+.container {
+
+    height: 92vh;
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.login-container {
+    width: 500px;
+    background-color: #333;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 30vh;
+    border-radius: 20px;
+    
+}
+.login-title{
+    text-justify: center;
+}
+
+.login{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+
+}
+
+.lbl{
+    width: 100%;
+}
+
+
+.nav li{
+
+    padding: 10px;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.nav:hover{
+    background-color: #131;
+
+
+}
+
+.nav-item a{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-size: 2rem;
+    display: inline;
+    text-decoration: none;
+}
+.nav-inicio{
+    grid-area: inicio;
+}
+
+.nav-servicios{
+    grid-area: servicios;
+}
+
+.nav-descargas{
+    grid-area: descargar;
+}
+
+.nav-qs{
+    grid-area: qs;
+}
